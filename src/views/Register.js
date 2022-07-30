@@ -19,7 +19,7 @@ const Register = () => {
   const handleSubmit = event => {
     // 👇️ prevent page refresh
     event.preventDefault();
-    setSubmit("Submit...")
+    setSubmit("Submitting...")
     console.log('form submitted ✅');
   };
 
@@ -50,7 +50,7 @@ const Register = () => {
         {
             loading ?
             <div className='flex flex-col justify-center items-center'>
-                <h2 className='text-3xl font-bold'>WELCOME TO YOUR APPOINTMENT SCHEDULER</h2>
+                <h2 className='text-3xl font-bold font-serif'>WELCOME TO YOUR APPOINTMENT SCHEDULER</h2>
                 <BounceLoader 
                     color={"#123abc"}
                      

@@ -74,7 +74,7 @@ const CreateAppointmentModal = ({openModal, setModal}) => {
 
     axios({
       method: "post",
-      url: "https://localhost:5001/api/Appointment/AllAppointments/",
+      url: "https://localhost:5001/api/Appointment/AddAppointment/",
       data: bodyFormData,
       headers: {"Content-Type": "multipart/form-data"}
     })
@@ -134,7 +134,7 @@ const CreateAppointmentModal = ({openModal, setModal}) => {
                             ))
                         }
                     </select>
-                    <button className='w-full bg-success rounded-lg h-10 mt-3' type="submit" onClick={handleSubmitTime}>Select Time</button>
+                    <button className='w-full bg-success rounded-lg h-10 mt-3' type="submit" onClick={handleSubmitTime}>Make Appointment</button>
                 </form>
             </div>
 

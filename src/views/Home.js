@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import GridLoader from "react-spinners/GridLoader"
+import Footer from '../components/Footer';
 import axios from 'axios';
 import CreateAppointmentModal from '../components/CreateAppointmentModal';
 import { nanoid } from 'nanoid';
@@ -44,7 +45,7 @@ const Home = () => {
             </div>
             <div className='w-[90%] flex justify-between mx-auto text-white'>
                 <button className='bg-success p-2 rounded-lg' onClick={handleModal}>Create an Appointment</button>
-                <button className='bg-primary p-2 rounded-lg'>Doctors Portal</button>
+                <button className='bg-primary p-2 rounded-lg' onClick={()=>alert("Coming soon...")}>Doctors Portal</button>
             </div>
             {
               loading ? 
@@ -81,10 +82,10 @@ const Home = () => {
                 </tbody>
               </table>
             }
-            
+            <Footer/>
           
       </div>
-      {/* <Footer/> */}
+      
     </div>
   )
 }
