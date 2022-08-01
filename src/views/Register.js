@@ -30,7 +30,7 @@ const Register = () => {
 
     axios({
       method: "post",
-      url: "https://localhost:5001/api/Schedule/AddUsers/",
+      url: "https://appointmentschedulerapp.herokuapp.com/api/Schedule/AddUsers/",
       data: bodyFormData,
       headers: {"Content-Type": "multipart/form-data"}
     })

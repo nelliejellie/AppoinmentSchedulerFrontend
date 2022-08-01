@@ -21,7 +21,7 @@ const CreateAppointmentModal = ({openModal, setModal}) => {
 
     axios({
       method: "post",
-      url: "https://localhost:5001/api/Schedule/coachSchedule/",
+      url: "https://appointmentschedulerapp.herokuapp.com/api/Schedule/coachSchedule/",
       data: bodyFormData,
       headers: {"Content-Type": "multipart/form-data"}
     })
@@ -45,7 +45,7 @@ const CreateAppointmentModal = ({openModal, setModal}) => {
 
     axios({
       method: "post",
-      url: "https://localhost:5001/api/Schedule/time/",
+      url: "https://appointmentschedulerapp.herokuapp.com/api/Schedule/time/",
       data: bodyFormData,
       headers: {"Content-Type": "multipart/form-data"}
     })
@@ -74,7 +74,7 @@ const CreateAppointmentModal = ({openModal, setModal}) => {
 
     axios({
       method: "post",
-      url: "https://localhost:5001/api/Appointment/AddAppointment/",
+      url: "https://appointmentschedulerapp.herokuapp.com/api/Appointment/AddAppointment/",
       data: bodyFormData,
       headers: {"Content-Type": "multipart/form-data"}
     })
