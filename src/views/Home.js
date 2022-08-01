@@ -31,7 +31,7 @@ const Home = () => {
   }
   return (
     <div>
-      <div className='h-screen'>
+      <div className='h-screen flex flex-col'>
         {/* modal */}
         {
           openModal === true &&
@@ -49,7 +49,7 @@ const Home = () => {
             </div>
             {
               loading ? 
-              <div className='flex flex-col justify-center items-center mt-14'>
+              <div className='flex-1 flex flex-col justify-center items-center mt-14'>
                 <GridLoader 
                     color={"#123abc"}
                      
