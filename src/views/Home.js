@@ -41,7 +41,7 @@ const Home = () => {
         {/* modal ends */}
         <Navbar/>
             <div className='flex justify-center w-full'>
-              <h1 className='font-bold text-3xl mt-3'>Welcome {user}</h1>
+              <h1 className='font-bold text-3xl mt-3 md:mb-4'>Welcome {user}</h1>
             </div>
             <div className='w-[90%] flex justify-between mx-auto text-white'>
                 <button className='bg-success p-2 rounded-lg' onClick={handleModal}>Create an Appointment</button>
