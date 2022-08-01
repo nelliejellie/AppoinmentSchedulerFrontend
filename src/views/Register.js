@@ -50,7 +50,7 @@ const Register = () => {
         {
             loading ?
             <div className='flex flex-col justify-center items-center'>
-                <h2 className='text-3xl font-bold font-serif'>WELCOME TO YOUR APPOINTMENT SCHEDULER</h2>
+                <h2 className='text-3xl font-bold font-serif sm:text-center sm:text-lg'>WELCOME TO YOUR APPOINTMENT SCHEDULER</h2>
                 <BounceLoader 
                     color={"#123abc"}
                      
