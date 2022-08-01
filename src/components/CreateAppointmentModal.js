@@ -100,7 +100,7 @@ const CreateAppointmentModal = ({openModal, setModal}) => {
                         <option value="Natalia Stanton Jr.">Natalia Stanton Jr.</option>
                         <option value="Nola Murazik V">Nola Murazik V</option>
                         <option value="Elyssa O'Kon">Elyssa O'Kon</option>
-                        <option value="Dr. Geovany Keebler"></option>
+                        <option value="Dr. Geovany Keebler">Dr. Geovany Keebler</option>
                     </select>
                     <button className='w-full bg-success rounded-lg h-10 mt-3' type="submit" onClick={handleSubmit}>Select Doctor</button>
                 </form>
