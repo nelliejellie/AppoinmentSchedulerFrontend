@@ -19,7 +19,7 @@ const Home = () => {
   // async data
   const getAppointments = async () =>{
     setLoading(true)
-    const response = await axios.get("https://localhost:5001/api/Schedule/GetCoaches/");
+    const response = await axios.get("https://appointmentschedulerapp.herokuapp.com/api/Schedule/GetCoaches/");
     console.log(response.data)
     setSchedules(response.data)
     setLoading(false)
